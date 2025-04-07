@@ -11,15 +11,18 @@ const CartDrawer = ({ drawerOpen, toggleCartDrawer }) => {
                 </button>
             </div>
 
+            {/* Start Cart Contents Component */}
             <div className='flex-grow p-4 overflow-y-auto'>
                 <h2 className='text-xl font-semibold mb-4'>Your Cart</h2>
             </div>
+            {/* End Cart Contents Component */}
 
+           {/*Start Cart button*/}
             <div className='p-4 bg-white  sticky bottom-0'>
                 <button className='w-full bg-black text-white py-3 rounded  font-semibold hover:bg-gray-800 transition'>Checkout</button>
                 <p className='text-sm tracking-tighter text-gray-500 mt-2 text-center '>shipping, taxes and didcount are codes calculated at checkout. </p>
-
             </div>
+            {/*End Cart button*/}
         </div>
     )
 }
