@@ -13,4 +13,4 @@ const UserLayout = () => {
   )
 }
 
-export default UserLayout
+export default UserLayouts
