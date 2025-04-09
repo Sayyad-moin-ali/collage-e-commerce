@@ -1,3 +1,5 @@
+import React from 'react';
+import { RiDeleteBin6Line } from 'react-icons/ri';
 const CartContents=() => {
     const cartproducts=[
         {
@@ -24,9 +26,9 @@ const CartContents=() => {
             {cartproducts.map((product,index) => (
                  <div key={index} className="flex items-start justify-between py-4 border-b">
                     <div className="flex items-start">
-                        <img src={product.image}
-                             alt={product.name} 
-                             className="w-20 h-24 rounded-md mr-4" rounded 
+                        <img src={product.Image}
+                             alt={product.Name} 
+                             className="w-20 h-24 object-cover rounded mr-4" rounded 
                         />
                     </div>
                     <div>
@@ -34,6 +36,17 @@ const CartContents=() => {
                         <p className="text" color="black-200">
                             size: {product.size} | color: {product.color}
                         </p>
+                    <div className='flex items-center mt-2'>
+                        <button className='border rounded px-2 py-1 text-xl font-medium'> - </button>
+                        <span className='mx-4'>{product.Quantity}</span>
+                        <button className='border rounded px-2 py-1 text-xl font-medium'> + </button>
+                    </div>
+                    </div>
+                    <div>
+                        <p>$ {product.Price.toLocaleString()}</p>
+                        <button>
+                            <RiDeleteBin6Line className="text-2xl text-red-500 hover:text-red-700" />
+                        </button>
                     </div>
                  </div>
                 )
@@ -41,3 +54,5 @@ const CartContents=() => {
         </div>
     );
 };
+
+export default CartContents;

@@ -6,8 +6,10 @@ const App = () => {
   return (
     <BrowserRouter>
     <Routes>
-      <Route path='/' element={<UserLayout/>}>  </Route>
-      <Route>  </Route>
+      <Route path='/' element={<UserLayout/>}>
+        < Route index element={<Home/>}/>
+      </Route>
+      <Route> {/*Andmin Layout*/}  </Route>
     </Routes>
     </BrowserRouter>
   )
