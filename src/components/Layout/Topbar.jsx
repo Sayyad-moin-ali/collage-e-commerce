@@ -1,7 +1,7 @@
 import React from 'react'
-import {TbBrandMeta} from "react-icons/tb"
-import {IoLogoInstagram } from "react-icons/io"
-import {RiTwitterXLine} from "react-icons/ri"
+import { IoLogoInstagram } from "react-icons/io"
+import { RiTwitterXLine } from "react-icons/ri"
+import { TbBrandMeta } from "react-icons/tb"
 
 const Topbar = () => {
     return (
@@ -19,7 +19,7 @@ const Topbar = () => {
                     </a>
                 </div>
                 <div className='text-sm text-center flex-grow'>
-                    <span>we ship worldeide - fast and reliable shippiing </span>
+                    <span>CONNECTING THE WORLD, ONE PACKAGE AT A TIME !!!</span>
                 </div>
                 <div className='text-sm hidden md:block'>
             <a href='tel:+1234567890' className='hover:text-gray-300'>+1(234) 56789</a>

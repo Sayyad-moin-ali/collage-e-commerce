@@ -1,9 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { HiBars3BottomRight, HiOutlineShoppingBag, HiOutlineUser } from "react-icons/hi2"
 import { Link } from 'react-router-dom'
-import { HiOutlineUser, HiOutlineShoppingBag, HiBars3BottomRight } from "react-icons/hi2"
-import SearchBar from './SearchBar'
 import CartDrawer from '../Layout/CartDrawer'
-import { useState } from 'react'
+import SearchBar from './SearchBar'
 
 const Navbar = () => {
 
@@ -17,13 +16,15 @@ const Navbar = () => {
         <>
             <nav className='container mx-auto flex items-center justify-between py-4 px-6'>
                 <div>
-                    <Link to="/" className='text-2xl font-medium'>Rabbit</Link>
+                    <Link to="/" className='text-2xl font-medium'>Zayra Mart</Link>
                 </div>
                 <div className='hidden md:flex space-x-6'>
-                    <Link to="#" className='text-gray-700 hover:text-black text-sm font-medium uppercase'>Men</Link>
-                    <Link to="#" className='text-gray-700 hover:text-black text-sm font-medium uppercase'>Women</Link>
-                    <Link to="#" className='text-gray-700 hover:text-black text-sm font-medium uppercase'>TopWear</Link>
-                    <Link to="#" className='text-gray-700 hover:text-black text-sm font-medium uppercase'>BottomWear</Link>
+                    <Link to="#" className='text-gray-700 hover:text-black text-sm font-medium uppercase'>Fashion</Link>
+                    <Link to="#" className='text-gray-700 hover:text-black text-sm font-medium uppercase'>Mobiles</Link>
+                    <Link to="#" className='text-gray-700 hover:text-black text-sm font-medium uppercase'>Electronics</Link>
+                    <Link to="#" className='text-gray-700 hover:text-black text-sm font-medium uppercase'>Toys</Link>
+                    <Link to="#" className='text-gray-700 hover:text-black text-sm font-medium uppercase'>Home and Furniture</Link>
+                    <Link to="#" className='text-gray-700 hover:text-black text-sm font-medium uppercase'>Appliances</Link>
 
                 </div>
 
