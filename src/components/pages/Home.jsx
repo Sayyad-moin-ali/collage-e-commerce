@@ -1,6 +1,5 @@
-import Hero from "../components/Layout/Hero";
-
-export const Home = () => {
+import Hero from "../Layout/hero";
+const Home = () => {
   return (
     <div>
       <Hero />
